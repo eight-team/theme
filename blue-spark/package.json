@@ -1,20 +1,36 @@
 {
-  "name": "sparky-bootstrap-3-sass-starter-template",
+  "name": "blue-spark",
   "version": "1.0.0",
   "dependencies": {
+    "babel": "^6.23.0",
+    "bower": "^1.8.4",
+    "browser-sync": "^2.24.7",
+    "foundation": "^4.2.1-1",
     "grunt-cssnano": "^2.1.0",
-    "pixrem": "^3.0.2"
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "pixrem": "^3.0.2",
+    "sass": "^1.14.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
-    "grunt": "~0.4.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-cssnano": "^2.1.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^1.2.0",
+    "grunt-sass": "^3.0.1",
     "postcss-cli": "^2.5.2",
     "postcss-flexbugs-fixes": "^2.0.0"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }
