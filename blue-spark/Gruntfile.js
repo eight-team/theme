@@ -1,11 +1,8 @@
 module.exports = function(grunt) {
-
-    // Project configuration.
+     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
-
-        /* grab the Bootstrap js and combine it with my custom scripts
+         /* grab the Bootstrap js and combine it with my custom scripts
         The goal is to limit the number of http requests to increase load time
          */
         concat: {
@@ -19,8 +16,7 @@ module.exports = function(grunt) {
                 dest: '../wp-content/themes/gogotheme/assets/js/scripts.js',
             },
         },
-
-        /* Now minify the scripts */
+         /* Now minify the scripts */
         uglify: {
             defer: {
                 src: ['js/defer.js'], //input
@@ -31,11 +27,7 @@ module.exports = function(grunt) {
                 dest: '../wp-content/themes/gogotheme/assets/js/scripts.min.js' //output
             },
         },
-
-
-
-
-        /* Convert the Sass into CSS */
+         /* Convert the Sass into CSS */
         sass: {
             options: {
                 sourceMap: true
@@ -46,9 +38,7 @@ module.exports = function(grunt) {
                 }
             }
         },
-
-
-        /* Make sure the CSS accounts for browser inconsistency */
+         /* Make sure the CSS accounts for browser inconsistency */
         postcss: {
             options: {
                 map: true,
@@ -63,9 +53,7 @@ module.exports = function(grunt) {
                 src: '../wp-content/themes/gogotheme/assets/css/*.css'
             }
         },
-
-
-        /* Auto Update the scripts and styles when working */
+         /* Auto Update the scripts and styles when working */
         watch: {
             scripts: {
                 files: ['js/*.js'],
@@ -82,19 +70,14 @@ module.exports = function(grunt) {
                 },
             },
         },
-
-    });
+     });
     // END GRUNT
-
-
-    // Load the plugins
+     // Load the plugins
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
-    // Default task(s).
+     // Default task(s).
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'postcss']);
-
-};
+ };

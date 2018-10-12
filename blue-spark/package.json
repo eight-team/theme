@@ -17,7 +17,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "pixrem": "^3.0.2",
-    "sass": "^1.14.1"
+    "sass": "^1.14.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
