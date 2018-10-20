@@ -1,5 +1,8 @@
-footer {margin-top:3em;}
-.glyphicon-fire {color:$brand-primary;}
-body {
-  background-color: red;
+.btn {
+  &-yellow {
+    color: yellow;
+  }
+  &-blue {
+    color: blue;
+  }
 }

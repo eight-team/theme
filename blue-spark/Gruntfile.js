@@ -64,7 +64,16 @@ module.exports = function(grunt) {
             }
         },
 
-
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    '/css/styles.css': 'sass/styles.scss'
+                }
+            }
+        },
         /* Auto Update the scripts and styles when working */
         watch: {
             scripts: {
