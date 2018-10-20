@@ -19,8 +19,13 @@
     "gulp-sass": "^3.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
+<<<<<<< HEAD
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+=======
+    "pixrem": "^3.0.2",
+    "sass": "^1.14.2"
+>>>>>>> e6314d06319f51656ff58445ff5825a3c2aa34dc
   },
   "dependencies": {
     "save-dev": "^2.0.0",
